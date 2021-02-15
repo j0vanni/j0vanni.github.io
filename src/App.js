@@ -161,6 +161,7 @@ function Languages(props) {
         alt=""
         src={props.image}
         width={50}
+        height={50}
         style={{ marginRight: "15px" }}
       />
       <p>{props.children}</p>
