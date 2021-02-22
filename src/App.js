@@ -117,13 +117,16 @@ function ListThisProjects() {
     <div>
       {Projects.map((item) => (
         <div style={{ marginLeft: "15px" }}>
-          <div style={{ lineHeight: "5px" }}>
-            <h2>{item.projectname}</h2>
+          <div>
+            <h2 style={{ marginBottom: "0px", marginTop: "15px" }}>
+              {item.projectname}
+            </h2>
             <div
               style={{
                 marginTop: "0px",
                 marginLeft: "15px",
                 lineHeight: "20px",
+                paddingRight: "30px",
               }}
             >
               {item.projectdescription}
@@ -133,6 +136,7 @@ function ListThisProjects() {
                 marginTop: "10px",
                 marginLeft: "15px",
                 lineHeight: "22px",
+                paddingRight: "30px",
               }}
             >
               {item.projectlist.map((otheritem) => (
